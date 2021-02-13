@@ -1,8 +1,23 @@
-function App() {
+import React from 'react'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect
+} from "react-router-dom";
+import { Header } from './components/header';
+
+const App = () => {
   return (
-    <div className="App">
-      שלום עולם
-    </div>
+      <Router>
+        <Switch>
+          <Route path="/">
+            <Header />
+          </Route>
+          {/* <Route path='/404' component={PageNotFound} />
+        <Redirect from='*' to='/404' /> */}
+        </Switch>
+      </Router>
   );
 }
 
