@@ -1,0 +1,72 @@
+/* /////////////////////////    colors    /////////////////////////// */
+/* /////////////////////////    colors    /////////////////////////// */
+body {
+  color: #333;
+  font-family: "Cairo", sans-serif;
+  text-align: unset; }
+  body ul {
+    margin: 0;
+    padding: 0; }
+  body li {
+    list-style: none;
+    margin: 0; }
+  body button,
+  body button:hover,
+  body a,
+  body a:hover {
+    color: #333;
+    outline: none !important; }
+  body button:hover,
+  body a:hover {
+    text-decoration: none; }
+  body button {
+    border: none;
+    background: none;
+    padding: 0; }
+  body .perfect-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  body .name {
+    color: #910667; }
+  body .component-header {
+    font-size: 12vw;
+    padding: 10vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+
+@media (min-width: 576px) {
+  body .component-header {
+    font-size: 10vw;
+    padding: 8vw; } }
+
+@media (min-width: 768px) {
+  body .component-header {
+    font-size: 8vw;
+    padding: 6vw; } }
+
+@media (min-width: 992px) {
+  body .component-header {
+    font-size: 6vw;
+    padding: 4vw; } }
+
+@media (min-width: 1200px) {
+  body .component-header {
+    font-size: 5rem;
+    padding: 6rem 0 5rem; } }
+
+#header {
+  background-color: aquamarine; }
