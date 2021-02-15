@@ -346,3 +346,13 @@ body {
   #home h2 {
     font-size: 2.8rem;
     margin: 1.5rem; } }
+
+#contents .boxes-container .contentBox {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }

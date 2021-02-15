@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Header from './components/header';
 import Home from './components/home';
+import { Contents } from './components/contents';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/">
           <Header />
           <Home/>
+          <Contents/>
         </Route>
         {/* <Route path='/404' component={PageNotFound} />
         <Redirect from='*' to='/404' /> */}
