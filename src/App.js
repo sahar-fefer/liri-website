@@ -8,6 +8,7 @@ import {
 import Header from './components/header';
 import Home from './components/home';
 import { Contents } from './components/contents';
+import { Recommendations } from './components/recommendations';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/">
           <Header />
           <Home/>
+          <Recommendations/>
           <Contents/>
         </Route>
         {/* <Route path='/404' component={PageNotFound} />
