@@ -304,3 +304,45 @@ body {
     justify-content: flex-end; }
   #header .leng {
     display: block !important; } }
+
+#home {
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  #home h1 {
+    font-size: 1.5rem;
+    margin: .8rem; }
+  #home h2 {
+    font-size: 1.3rem;
+    margin: .8rem; }
+
+@media screen and (min-width: 576px) {
+  #home h1 {
+    font-size: 2rem;
+    margin: 1rem; }
+  #home h2 {
+    font-size: 1.8rem;
+    margin: 1rem; } }
+
+@media screen and (min-width: 768px) {
+  #home h1 {
+    font-size: 2.5rem;
+    margin: 1.2rem; }
+  #home h2 {
+    font-size: 2.3rem;
+    margin: 1.2rem; } }
+
+@media screen and (min-width: 992px) {
+  #home h1 {
+    font-size: 3rem;
+    margin: 1.5rem; }
+  #home h2 {
+    font-size: 2.8rem;
+    margin: 1.5rem; } }

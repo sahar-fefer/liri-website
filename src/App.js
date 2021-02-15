@@ -6,6 +6,7 @@ import {
   Redirect
 } from "react-router-dom";
 import Header from './components/header';
+import Home from './components/home';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Switch>
         <Route path="/">
           <Header />
+          <Home/>
         </Route>
         {/* <Route path='/404' component={PageNotFound} />
         <Redirect from='*' to='/404' /> */}
