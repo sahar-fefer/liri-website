@@ -1,3 +1,247 @@
+@import "./variables";
+
 #header {
-    background-color: aquamarine;
+    .nav-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        transition: all ease 0.3s;
+        color: $text;
+        box-shadow: 0px 0px 0px 0px #333;
+        background-color: transparent;
+        padding: 0 20px;
+
+        .active {
+            color: $primary;
+            font-size: 35px;
+        }
+
+        .regular-header {
+            z-index: 2;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .logo {
+                cursor: pointer;
+                font-family: "Major Mono Display", monospace;
+                font-size: 40px;
+                width: fit-content;
+            }
+
+            .link-wrapper {
+                transition: all ease 0.3s;
+                display: none;
+                cursor: pointer;
+
+                &:hover {
+                    font-size: 35px;
+                }
+            }
+
+            .leng {
+                display: none;
+                margin-left: 20px;
+            }
+        }
+    }
+
+    .burger-nav {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 20;
+        width: 40px;
+        height: 30px;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+    
+        span {
+            display: block;
+            position: absolute;
+            height: 4px;
+            width: 100%;
+            background: $secondary-hover;
+            border-radius: 9px;
+            opacity: 1;
+            left: 0;
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+            -webkit-transition: 0.25s ease-in-out;
+            -moz-transition: 0.25s ease-in-out;
+            -o-transition: 0.25s ease-in-out;
+            transition: 0.25s ease-in-out;
+    
+            &:nth-child(1) {
+                top: 0px;
+                -webkit-transform-origin: left center;
+                -moz-transform-origin: left center;
+                -o-transform-origin: left center;
+                transform-origin: left center;
+            }
+    
+            &:nth-child(2) {
+                top: 13px;
+                -webkit-transform-origin: left center;
+                -moz-transform-origin: left center;
+                -o-transform-origin: left center;
+                transform-origin: left center;
+            }
+            &:nth-child(3) {
+                top: 26px;
+                -webkit-transform-origin: left center;
+                -moz-transform-origin: left center;
+                -o-transform-origin: left center;
+                transform-origin: left center;
+            }
+        }
+        &.open {
+            span {
+                background-color: $secondary-dark;
+                &:nth-child(1) {
+                    -webkit-transform: rotate(45deg);
+                    -moz-transform: rotate(45deg);
+                    -o-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                    top: 0;
+                    left: 5px;
+                }
+    
+                &:nth-child(2) {
+                    width: 0%;
+                    opacity: 0;
+                }
+    
+                &:nth-child(3) {
+                    -webkit-transform: rotate(-45deg);
+                    -moz-transform: rotate(-45deg);
+                    -o-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+                    top: 29px;
+                    left: 5px;
+                }
+            }
+        }
+    }
+    
+    @media (min-width: 650px) {
+        .burger-nav {
+            display: none;
+        }
+    }
+
+    .nav-bar-scroll {
+        box-shadow: 0px 2px 11px 0px #333;
+        background-color: #a9a9a9;
+        z-index: 10;
+
+        .header-scroll {
+            font-size: 27px;
+
+            .logo-scroll {
+                font-size: 50px;
+            }
+        }
+    }
+
+    .mobile-bar {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        opacity: 0;
+        background-color: $opacity-background;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: all ease 0.3s;
+
+        &.open-screen {
+            opacity: 1 !important;
+            z-index: 1 !important;
+        }
+
+        &.close-screen {
+            opacity: 0 !important;
+            z-index: -1 !important;
+        }
+
+        .bar {
+            font-size: 40px;
+
+            .section {
+                margin: 60px auto;
+                width: fit-content;
+                cursor: pointer;
+
+                &.leng {
+                    display: block;
+                    margin-bottom: 100px;
+                }
+            }
+        }
+    }
+
+    .scroll-up-button {
+        position: fixed;
+        bottom: 10px;
+        left: 45%;
+        right: 45%;
+        height: fit-content;
+        font-size: 35px;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+
+        .scrollTop {
+            cursor: pointer;
+            margin: auto;
+            opacity: 0.5;
+            animation: fadeIn 0.3s;
+            transition: opacity 0.4s;
+            z-index: 12;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+@media (min-width: 650px) {
+    #header {
+        .link-wrapper {
+            display: flex !important;
+            justify-content: flex-end;
+        }
+
+        .leng {
+            display: block !important;
+        }
+    }
 }

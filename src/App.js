@@ -5,19 +5,19 @@ import {
   Route,
   Redirect
 } from "react-router-dom";
-import { Header } from './components/header';
+import Header from './components/header';
 
 const App = () => {
   return (
-      <Router>
-        <Switch>
-          <Route path="/">
-            <Header />
-          </Route>
-          {/* <Route path='/404' component={PageNotFound} />
+    <Router>
+      <Switch>
+        <Route path="/">
+          <Header />
+        </Route>
+        {/* <Route path='/404' component={PageNotFound} />
         <Redirect from='*' to='/404' /> */}
-        </Switch>
-      </Router>
+      </Switch>
+    </Router>
   );
 }
 
