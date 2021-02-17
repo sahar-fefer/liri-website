@@ -1,0 +1,112 @@
+@import "./variables";
+
+#contact {
+    min-height: 85vh;
+    background: rgba(248, 248, 248, 0.2);
+    border-radius: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+
+    .wrapper {
+        margin-bottom: 10px;
+
+        h3 {
+            font-size: 1.3rem;
+            margin: 0;
+        }
+
+        .form {
+            width: 100%;
+            border-radius: 15px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            input,
+            textarea {
+                opacity: 0.9;
+                background: $light;
+                border: 2px solid $text-light;
+                outline: none;
+                padding: 7px;
+                margin: 4px 0;
+                width: 100%;
+            }
+
+            .required {
+                margin: auto 0;
+            }
+
+            .textarea-required {
+                margin: 1rem 0;
+            }
+
+            input {
+                border-radius: 15px;
+            }
+
+            textarea {
+                border-radius: 30px;
+                border-radius: 13px;
+            }
+            .submit-wrapper {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                .submit {
+                    background: $secondary-light;
+                    padding: 0.2vh 0;
+                    margin-top: 2px;
+                    transition: all 0.3s;
+                    width: 40%;
+                    border-radius: 10px;
+
+                    &:hover {
+                        background: $secondary;
+                    }
+                }
+            }
+            .text-err {
+                color: rgb(105, 1, 1);
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    #contact {
+        .wrapper {
+            h3 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    #contact {
+        min-height: 93vh;
+    }
+}
+
+@media (min-width: 992px) {
+    #contact {
+        .wrapper {
+            h3 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    #contact {
+        .wrapper {
+            h3 {
+                font-size: 1.75rem;
+            }
+        }
+    }
+}
