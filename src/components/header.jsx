@@ -105,7 +105,7 @@ const Header = () => {
                     </div>
                     <div className={'link-wrapper col-auto'}>
                         <Link to="/">
-                            המלצות
+                            העשייה שלי
                         </Link>
                     </div>
                     <div className={'link-wrapper col-auto'}>
@@ -132,7 +132,7 @@ const Header = () => {
                     <div className={'section'}>
                         <Link to="/"
                             onSetActive={() => setIsBurgerOpen(false)} >
-                            המלצות
+                            העשייה שלי
                         </Link>
                     </div>
                     <div className={'section'}>

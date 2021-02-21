@@ -10,7 +10,9 @@
         color: $text;
         box-shadow: 0px 0px 0px 0px #333;
         background-color: transparent;
-        padding: 0 20px;
+        padding: 0 20px; 
+        background-color: $grey;
+        z-index: 10;
 
         .active {
             color: $primary;
