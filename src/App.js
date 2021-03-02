@@ -10,6 +10,7 @@ import Home from './components/home';
 import { Contents } from './components/contents';
 import { Recommendations } from './components/recommendations';
 import { Contact } from './components/contact';
+import { About } from './components/about';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/">
           <Header />
           <Home />
+          <About />
           <Recommendations />
           <Contents />
           <Contact />
