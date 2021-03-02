@@ -349,6 +349,28 @@ body {
     font-size: 2.8rem;
     margin: 1.5rem; } }
 
+#about {
+  overflow: hidden; }
+  #about .introduc {
+    margin: auto 0; }
+  #about .lecturs-wrapper {
+    margin: 5vw 0; }
+    #about .lecturs-wrapper .img-wrapper .lecture-img {
+      height: 8vw;
+      margin: 0.5rem; }
+
+@media (min-width: 576px) {
+  .skill-img {
+    height: 6.5vw !important; } }
+
+@media (min-width: 768px) {
+  .skill-img {
+    height: 5.5vw !important; } }
+
+@media (min-width: 992px) {
+  .skill-img {
+    height: 4.5vw !important; } }
+
 #contents .boxes-container .contentBox {
   background-repeat: no-repeat;
   background-position: center;
