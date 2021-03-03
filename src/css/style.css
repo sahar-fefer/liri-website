@@ -371,6 +371,28 @@ body {
   .skill-img {
     height: 4.5vw !important; } }
 
+#activity {
+  overflow: hidden; }
+
+#activity-box {
+  margin: 2.5vh 0; }
+  #activity-box .content-wrapper .activity-logo {
+    height: 8vh; }
+  #activity-box .content-wrapper .header {
+    margin: auto; }
+
+@media (min-width: 576px) {
+  .skill-img {
+    height: 6.5vw !important; } }
+
+@media (min-width: 768px) {
+  .skill-img {
+    height: 5.5vw !important; } }
+
+@media (min-width: 992px) {
+  .skill-img {
+    height: 4.5vw !important; } }
+
 #contents .boxes-container .contentBox {
   background-repeat: no-repeat;
   background-position: center;

@@ -11,6 +11,7 @@ import { Contents } from './components/contents';
 import { Recommendations } from './components/recommendations';
 import { Contact } from './components/contact';
 import { About } from './components/about';
+import { Activity } from './components/activity';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Header />
           <Home />
           <About />
+          <Activity />
           <Recommendations />
           <Contents />
           <Contact />

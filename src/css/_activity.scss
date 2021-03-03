@@ -1,0 +1,33 @@
+#activity {
+    overflow: hidden;
+}
+
+#activity-box {
+    margin: 2.5vh 0;
+    .content-wrapper {
+        .activity-logo {
+            height: 8vh;
+        }
+        .header {
+            margin: auto;
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .skill-img {
+        height: 6.5vw !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .skill-img {
+        height: 5.5vw !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .skill-img {
+        height: 4.5vw !important;
+    }
+}
