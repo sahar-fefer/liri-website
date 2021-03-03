@@ -393,6 +393,20 @@ body {
   .skill-img {
     height: 4.5vw !important; } }
 
+#lectures {
+  overflow: hidden; }
+
+#lecture-box {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+  #lecture-box .box {
+    background-color: aquamarine;
+    margin: 2.5vh;
+    padding: 2.5vh;
+    height: 30vh; }
+
 #contents .boxes-container .contentBox {
   background-repeat: no-repeat;
   background-position: center;
