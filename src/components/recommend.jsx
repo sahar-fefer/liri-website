@@ -1,16 +1,23 @@
 import React from 'react'
 
-export const Recommend = () => {
+export const Recommend = ({ rec, setActiveRec, activeRec }) => {
+    console.log('rec.i', rec.i);
+    console.log('activeRec', activeRec);
     return (
-        <div className="col">
-            <div className='recommend'>
+        // <div className='col'>
+            <div className={`recommend col
+            ${rec.i === activeRec && 'activeRecommend'} 
+            ${rec.i + 1 === activeRec && 'nearActiveRecommend'} 
+            ${rec.i - 1 === activeRec && 'nearActiveRecommend'}`}
+            onClick={setActiveRec(rec.i)}>
                 <div className="square">
-                    המלצה המלצה המלצה
-            </div>
+                    <p>{rec.recomend}</p>
+                </div>
                 <div className="recommender">
-                    מי שהמליץ
+                    <p>{rec.name}</p>
+                    <p>{rec.organization}</p>
+                </div>
             </div>
-            </div>
-        </div>
+        // </div>
     )
 }
